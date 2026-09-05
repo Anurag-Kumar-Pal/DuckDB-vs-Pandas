@@ -27,13 +27,13 @@ This benchmark evaluates the performance tradeoffs between **Pandas** (in-memory
 ## 📊 Key Findings & Conclusions
 
 1. **Dataset Loading:** 
-   * **DuckDB** significantly outperforms Pandas when loading large datasets, scaling efficiently as volumes increase from 500k to 4M rows.
+   **DuckDB** significantly outperforms Pandas when loading large datasets, scaling efficiently as volumes increase from 500k to 4M rows.
 2. **Aggregations:** 
-   * **Pandas** maintains faster aggregation performance across all dataset sizes, consistently outperforming DuckDB from small files up to heavy volumes (4M rows).
+   **Pandas** maintains faster aggregation performance across all dataset sizes, consistently outperforming DuckDB from small files up to heavy volumes (4M rows).
 3. **Row-Wise Transformations:** 
-   * **Pandas** is quicker on smaller scopes (up to 500k rows), whereas **DuckDB** takes the efficiency lead when handling larger datasets ($1.5M+$ rows).
+   **Pandas** is quicker on smaller scopes (up to 500k rows), whereas **DuckDB** takes the efficiency lead when handling larger datasets ($1.5M+$ rows).
 4. **Sorting Operations:** 
-   * Performance varies depending on size, with Pandas showing strong performance at lower row counts while DuckDB excels at scale for specific queries.
+   Performance varies depending on size, with Pandas showing strong performance at lower row counts while DuckDB excels at scale for specific queries.
 
 ---
 
