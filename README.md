@@ -39,28 +39,7 @@ This benchmark evaluates the performance tradeoffs between **Pandas** (in-memory
 
 ## 📈 Summary Benchmark Results
 
-| Operation | Dataset Size | Pandas Wall Time (s) | DuckDB Action Time (s) | Delta (Pandas - DuckDB) (s) |
-| :--- | :--- | :---: | :---: | :---: |
-| **Loading** | 50k rows | 0.28 | 0.21 | +0.07 |
-| | 100k rows | 0.77 | 0.28 | +0.49 |
-| | 500k rows | 6.16 | 1.22 | +4.94 |
-| | 1.5M rows | 8.75 | 3.03 | +5.72 |
-| | 4M rows | 97.00 | 64.02 | +32.98 |
-| **Sorting** | 50k rows | 0.04 | 0.38 | -0.34 |
-| | 100k rows | 0.05 | 0.19 | -0.14 |
-| | 500k rows | 0.25 | 0.41 | -0.16 |
-| | 1.5M rows | 2.17 | 0.43 | +1.74 |
-| | 4M rows | 8.23 | 38.80 | -30.57 |
-| **Aggregating** | 50k rows | 0.01 | 0.19 | -0.18 |
-| | 100k rows | 0.01 | 0.12 | -0.11 |
-| | 500k rows | 0.03 | 0.38 | -0.35 |
-| | 1.5M rows | 0.20 | 0.41 | -0.21 |
-| | 4M rows | 0.43 | 12.65 | -12.22 |
-| **Row-Wise Transformation** | 50k rows | 0.02 | 0.14 | -0.12 |
-| | 100k rows | 0.04 | 0.11 | -0.07 |
-| | 500k rows | 0.14 | 0.15 | -0.01 |
-| | 1.5M rows | 0.33 | 0.13 | +0.20 |
-| | 4M rows | 0.76 | 0.24 | +0.52 |
+<img width="4800" height="3000" alt="duckdb_vs_pandas_trends" src="https://github.com/user-attachments/assets/9aca728d-81d6-4ebf-88a8-31871387b50f" />
 
 ---
 
